@@ -1,0 +1,192 @@
+
+body {
+    font-family: 'Source Code Pro', monospace;
+    overflow: hidden;
+}
+
+/* nav */
+
+nav {
+    display: flex;
+    padding: .6rem 2rem;
+    background-color: rgba(0, 0, 0, 0.553);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+nav .judul a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'Prompt', sans-serif;
+    letter-spacing: 1px;
+}
+
+nav .link {
+    display: flex;
+}
+
+nav .link .link-item {
+    margin: 0 .7rem;
+    
+}
+
+nav .link .link-item a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* nav end */
+
+
+/* paralax */
+
+.item {
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+}
+
+.item img {
+    height: 100vh;
+    width: 100vw;
+    animation: zoom 2.5s ease-in-out forwards;
+    
+}
+
+.content .name {
+    color: white;
+    width: 300px;
+    position: absolute;
+    font-size: 2.5rem;
+    top: 28%;
+    left: 14%;
+    animation: bot 1.5s ease-in-out;
+    transition: 3s ease-in-out;
+    line-height: 1.1;
+    text-shadow: 0 3 5px black;
+}
+
+.content .des {
+    width: 400px;
+    height: max-content;
+    color: white;
+    position: absolute;
+    font-size: 1rem;
+    line-height: 1.6;
+    top: 50%;
+    left: 8%;
+    transition: 3s ease-in-out;
+    animation: kiri 2s ease-in-out ;
+}
+
+
+.button button .pl {
+    height: 50px;
+    width: 50px;
+    transition: .3s ease;
+}
+
+
+.button button .pl:hover {
+    transform-origin: 50% 50%;
+    transform:rotate(45deg);
+}
+
+.container .button button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    position: absolute;
+    z-index: 200;
+    top: 44.6%;
+    left: 47.2%;
+    transform: translate(-46% -47.5%);
+}
+
+#but {
+    position: absolute;
+    z-index: 100;
+    top: 75%;
+    left: 15%;
+    background: rgba(255, 255, 255, 0.563);
+    border: none;
+    border-radius: 5px;
+    animation: top 3s ease-in-out alternate;
+}
+
+.other {
+    width: 300px;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 200%;
+    transition: 1s ease;
+    color: white;
+    font-size: 1.2rem;
+    z-index: 200;
+}
+
+.other .active {
+    top: 50%;
+    left: 80%;
+}
+
+@keyframes bot {
+    from {
+        opacity: 0;
+        transform: translate(0,250px);
+        filter: blur(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0px);
+        filter: blur(0px);
+    }
+}
+
+@keyframes top {
+    from {
+        opacity: 0;
+        transform: translate(0,-250px);
+        filter: blur(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0,0px);
+        filter: blur(0px);
+    }
+}
+
+@keyframes kiri {
+    from {
+        opacity: 0;
+        transform: translate(-300px,0);
+        filter: blur(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-20,0px);
+        filter: blur(0px);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+        border-radius: 960px;
+    }
+    to {
+        border-radius: 0;
+        transform: scale(3);
+    }
+} 
+
+/* 1.920 */
