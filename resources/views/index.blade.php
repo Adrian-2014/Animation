@@ -11,7 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">
     <script src="jquery-3.5.1.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
 </head>
@@ -46,66 +46,32 @@
         <div class="slide" id="slide">
 
             <div class="item">
-                <img src="arnaud-mariat-45Z6hW1dQMI-unsplash.jpg">
+                <img src="{{ asset('photorealistic-galaxy-background.jpg') }}">
                 <div class="content">
-                    <div class="name"> This is Our Galaxy</div>
+                    <div class="name">This is Our Galaxy</div>
                     <div class="des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui nam
-                        laboriosam doloremque aliquam eius deus arkham knight.
-                        Lorem, ipsum dolor.
+                        The spiral is like a coin spinning through the void, drifting toward the unknown. But trust me, this is where we belong.
                     </div>
                 </div>
-                <div class="other">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt hic sapiente neque dolore soluta totam.
-                </div>
-                <button id="but">View More</button>
             </div>
 
             <div class="item">
-                <img src="nasa-rTZW4f02zY8-unsplash.jpg">
+                <img src="{{ asset('wallpaperflare.com_wallpaper.jpg') }}">
                 <div class="content">
-                    <div class="name">This is The Universe</div>
+                    <div class="name">This is The Nebula</div>
                     <div class="des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui nam
-                        laboriosam doloremque aliquam eius deus arkham knight.
-                        Lorem, ipsum dolor.
+                        Beautiful and perfect like a butterfly, revealing the true splendor of the universe. Yet behind that beauty lies the unexpected sign of a star's demise.
                     </div>
                 </div>
-                <div class="other">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt hic sapiente neque dolore soluta totam.
-                </div>
-                <button id="but">View More</button>
             </div>
             <div class="item">
-                <img src="greg-rakozy-oMpAz-DN-9I-unsplash.jpg">
+                <img src="{{ asset('planet-earth-background.jpg') }}">
                 <div class="content">
                     <div class="name">This is Our Home, Earth</div>
                     <div class="des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui nam
-                        laboriosam doloremque aliquam eius deus arkham knight.
-                        Lorem, ipsum dolor.
+                        Though it appears small and helpless, adrift in the vast expanse of stars, this is the best home we could ever hope for.
                     </div>
                 </div>
-                <div class="other">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt hic sapiente neque dolore soluta totam.
-                </div>
-                <button id="but">View More</button>
-            </div>
-
-            <div class="item">
-                <img src="vincentiu-solomon-ln5drpv_ImI-unsplash.jpg">
-                <div class="content">
-                    <div class="name">Beautiful Isn't?</div>
-                    <div class="des">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt qui nam
-                        laboriosam doloremque aliquam eius deus arkham knight.
-                        Lorem, ipsum dolor.
-                    </div>
-                </div>
-                <div class="other">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt hic sapiente neque dolore soluta totam.
-                </div>
-                <button id="but">View More</button>
             </div>
 
         </div>

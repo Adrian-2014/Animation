@@ -1,6 +1,5 @@
-
 body {
-    font-family: 'Source Code Pro', monospace;
+    font-family: "Merienda", cursive;
     overflow: hidden;
 }
 
@@ -30,7 +29,7 @@ nav .link {
 
 nav .link .link-item {
     margin: 0 .7rem;
-    
+
 }
 
 nav .link .link-item a {
@@ -58,33 +57,37 @@ nav .link .link-item a {
     height: 100vh;
     width: 100vw;
     animation: zoom 2.5s ease-in-out forwards;
-    
+
 }
 
 .content .name {
     color: white;
-    width: 300px;
+    /* width: 300px; */
     position: absolute;
-    font-size: 2.5rem;
+    font-size: 2rem;
     top: 28%;
-    left: 14%;
+    left: 10%;
     animation: bot 1.5s ease-in-out;
     transition: 3s ease-in-out;
     line-height: 1.1;
+    letter-spacing: .005rem;
     text-shadow: 0 3 5px black;
 }
 
 .content .des {
     width: 400px;
     height: max-content;
+    letter-spacing: .005rem;
+    text-shadow: 1px 1px black;
     color: white;
     position: absolute;
     font-size: 1rem;
+    text-indent: 1rem;
     line-height: 1.6;
-    top: 50%;
+    top: 40%;
     left: 8%;
     transition: 3s ease-in-out;
-    animation: kiri 2s ease-in-out ;
+    animation: kiri 2s ease-in-out;
 }
 
 
@@ -97,7 +100,7 @@ nav .link .link-item a {
 
 .button button .pl:hover {
     transform-origin: 50% 50%;
-    transform:rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .container .button button {
@@ -142,12 +145,13 @@ nav .link .link-item a {
 @keyframes bot {
     from {
         opacity: 0;
-        transform: translate(0,250px);
+        transform: translate(0, 250px);
         filter: blur(20px);
     }
+
     to {
         opacity: 1;
-        transform: translate(0,0px);
+        transform: translate(0, 0px);
         filter: blur(0px);
     }
 }
@@ -155,12 +159,13 @@ nav .link .link-item a {
 @keyframes top {
     from {
         opacity: 0;
-        transform: translate(0,-250px);
+        transform: translate(0, -250px);
         filter: blur(20px);
     }
+
     to {
         opacity: 1;
-        transform: translate(0,0px);
+        transform: translate(0, 0px);
         filter: blur(0px);
     }
 }
@@ -168,12 +173,13 @@ nav .link .link-item a {
 @keyframes kiri {
     from {
         opacity: 0;
-        transform: translate(-300px,0);
+        transform: translate(-300px, 0);
         filter: blur(20px);
     }
+
     to {
         opacity: 1;
-        transform: translate(-20,0px);
+        transform: translate(-20, 0px);
         filter: blur(0px);
     }
 }
@@ -181,12 +187,15 @@ nav .link .link-item a {
 @keyframes zoom {
     from {
         transform: scale(0);
-        border-radius: 960px;
+        opacity: 0;
+        border-radius: 50%;
     }
+
     to {
+        opacity: 1;
         border-radius: 0;
-        transform: scale(3);
+        transform: scale(1.2);
     }
-} 
+}
 
 /* 1.920 */
